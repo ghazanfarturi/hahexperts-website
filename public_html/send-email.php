@@ -25,19 +25,19 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 
 // Configuration - Update these email addresses
 $config = [
-    'admin_email' => 'info@hahexperts.com',  // Main recipient
-    'from_email' => 'noreply@hahexperts.com', // From address
+    'admin_email' => 'info@hahexperts.pk',  // Main recipient
+    'from_email' => 'noreply@hahexperts.pk', // From address
     'from_name' => 'HAH Healthcare Experts Website',
     
     // Service-specific emails (optional routing)
     'service_emails' => [
-        'regulatory' => 'compliance@hahexperts.com',
-        'biomedical' => 'engineering@hahexperts.com',
-        'legal' => 'legal@hahexperts.com',
-        'procurement' => 'info@hahexperts.com',
-        'management' => 'info@hahexperts.com',
-        'audit' => 'compliance@hahexperts.com',
-        'other' => 'info@hahexperts.com'
+        'regulatory' => 'compliance@hahexperts.pk',
+        'biomedical' => 'engineering@hahexperts.pk',
+        'legal' => 'legal@hahexperts.pk',
+        'procurement' => 'info@hahexperts.pk',
+        'management' => 'info@hahexperts.pk',
+        'audit' => 'compliance@hahexperts.pk',
+        'other' => 'info@hahexperts.pk'
     ]
 ];
 
@@ -192,7 +192,7 @@ $user_body = "
             <p><strong>HAH Healthcare Experts Team</strong></p>
         </div>
         <div class='footer'>
-            <p>Email: info@hahexperts.com</p>
+            <p>Email: info@hahexperts.pk</p>
             <p>&copy; 2024-2026 HAH Healthcare Experts. All rights reserved.</p>
         </div>
     </div>
@@ -219,7 +219,7 @@ if ($mail_sent) {
     http_response_code(500);
     echo json_encode([
         'success' => false, 
-        'message' => 'Sorry, there was an error sending your message. Please try again or email us directly at info@hahexperts.com'
+        'message' => 'Sorry, there was an error sending your message. Please try again or email us directly at info@hahexperts.pk'
     ]);
 }
 ?>
